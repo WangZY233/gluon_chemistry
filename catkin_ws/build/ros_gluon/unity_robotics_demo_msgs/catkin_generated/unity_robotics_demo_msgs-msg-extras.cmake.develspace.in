@@ -1,0 +1,2 @@
+set(unity_robotics_demo_msgs_MESSAGE_FILES "/home/wangzy/catkin_ws/src/ros_gluon/unity_robotics_demo_msgs/msg/PosRot.msg;/home/wangzy/catkin_ws/src/ros_gluon/unity_robotics_demo_msgs/msg/UnityColor.msg;/home/wangzy/catkin_ws/src/ros_gluon/unity_robotics_demo_msgs/msg/Rot.msg")
+set(unity_robotics_demo_msgs_SERVICE_FILES "/home/wangzy/catkin_ws/src/ros_gluon/unity_robotics_demo_msgs/srv/ObjectPoseService.srv;/home/wangzy/catkin_ws/src/ros_gluon/unity_robotics_demo_msgs/srv/PositionService.srv;/home/wangzy/catkin_ws/src/ros_gluon/unity_robotics_demo_msgs/srv/gluoncontrol.srv")

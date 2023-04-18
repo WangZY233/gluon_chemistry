@@ -1,0 +1,26 @@
+
+(cl:in-package :asdf)
+
+(defsystem "actuatorcontroller_ros-srv"
+  :depends-on (:roslisp-msg-protocol :roslisp-utils :std_msgs-msg
+)
+  :components ((:file "_package")
+    (:file "AttributeDictionary" :depends-on ("_package_AttributeDictionary"))
+    (:file "_package_AttributeDictionary" :depends-on ("_package"))
+    (:file "AttributeLookup" :depends-on ("_package_AttributeLookup"))
+    (:file "_package_AttributeLookup" :depends-on ("_package"))
+    (:file "AttributeQuery" :depends-on ("_package_AttributeQuery"))
+    (:file "_package_AttributeQuery" :depends-on ("_package"))
+    (:file "DebugQuery" :depends-on ("_package_DebugQuery"))
+    (:file "_package_DebugQuery" :depends-on ("_package"))
+    (:file "GeneralQuery" :depends-on ("_package_GeneralQuery"))
+    (:file "_package_GeneralQuery" :depends-on ("_package"))
+    (:file "IDModify" :depends-on ("_package_IDModify"))
+    (:file "_package_IDModify" :depends-on ("_package"))
+    (:file "ParametersSave" :depends-on ("_package_ParametersSave"))
+    (:file "_package_ParametersSave" :depends-on ("_package"))
+    (:file "TriviaQuery" :depends-on ("_package_TriviaQuery"))
+    (:file "_package_TriviaQuery" :depends-on ("_package"))
+    (:file "ZeroReset" :depends-on ("_package_ZeroReset"))
+    (:file "_package_ZeroReset" :depends-on ("_package"))
+  ))

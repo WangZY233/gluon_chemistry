@@ -1,39 +1,44 @@
 # RobotArm_gluon
 
 #### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+本系统是基于达闼Gluon 6L3机械臂开发的机械臂化学实验代码
+包括机械臂的抓取，放置，移动，倾倒翻转，刮取，搅拌（使用磁力搅拌器）等动作的可编辑程序
+可连接Unity实现数字孪生同步实时联动
 
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  建议使用ROS noetic
+2.  连接机械臂，将机械臂摆正至初始化位置
+3.  确定实验仪器已按规定位置放好
+4.  运行以下指令
+#机械臂初始化
+roslaunch gluon_moveit_config cm_demo.launch
+#启动tcp endpoint准备连接Unity
+roslaunch ros_tcp_endpoint endpoint.launch
+#给爪甲端口最高权限
+sudo chmod 777 /dev/ttyUSB0
 
 #### 参与贡献
+poundsWang:e-mail inonoway@163.com
+华科电信Dian团队全体成员
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+#### 常用调试命令
+
+开启节点图：
+rqt_graph
+service call 指令：
+rosservice call AddInts "control_num: 1" 
 
 
-#### 特技
+启动初始化端口
+rosrun serial_port serial_port
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+rosrun probot_demo test.py 
+
+#达闼默认的演示程序
+cd Workspace/innfos-gluon-controller/
+. environment
+./robotserver tutorials
+
+

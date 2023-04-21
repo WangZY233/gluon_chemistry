@@ -64,6 +64,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     "/home/wangzy/catkin_ws/src/ros_gluon/probot_demo/scripts/moveit_cartesian_demo.py"
     "/home/wangzy/catkin_ws/src/ros_gluon/probot_demo/scripts/moveit_attached_object_demo.py"
     "/home/wangzy/catkin_ws/src/ros_gluon/probot_demo/scripts/test.py"
+    "/home/wangzy/catkin_ws/src/ros_gluon/probot_demo/scripts/camera.py"
     )
 endif()
 

@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/opt/ros/noetic/include/**",
+                "/home/wangzy/catkin_ws/src/ros_gluon/gluon_control/include/**",
+                "/home/wangzy/catkin_ws/src/ros_gluon/probot_vision/include/**",
+                "/usr/include/**",
+                "${workspaceFolder}/src/ros_gluon/gluon/ActuatorController_SDK/sdk/include",
+                "${workspaceFolder}/devel/include"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++14"
+        }
+    ],
+    "version": 4
+}

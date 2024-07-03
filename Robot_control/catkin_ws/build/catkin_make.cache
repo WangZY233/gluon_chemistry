@@ -1,2 +1,0 @@
-actuatorcontroller_ros:ros_gluon/ROS-TCP-Endpoint:ros_gluon/cm_moveit:ros_gluon/gluon:ros_gluon/gluon_control:ros_gluon/gluon_moveit_config:ros_gluon/probot_anno_moveit_config:ros_gluon/probot_anno_with_gripper_moveit_config:ros_gluon/probot_demo:ros_gluon/probot_description:ros_gluon/probot_gazebo:ros_gluon/probot_vision:ros_gluon/unity_robotics_demo:ros_gluon/unity_robotics_demo_msgs:serial_port
--DCATKIN_DEVEL_PREFIX=/home/wangzy/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/wangzy/catkin_ws/install -G Unix Makefiles

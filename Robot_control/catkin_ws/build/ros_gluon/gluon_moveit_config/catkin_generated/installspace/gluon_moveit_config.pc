@@ -1,8 +1,0 @@
-prefix=/home/wangzy/catkin_ws/install
-
-Name: gluon_moveit_config
-Description: Description of gluon_moveit_config
-Version: 0.3.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
